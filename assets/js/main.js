@@ -18,10 +18,13 @@ const ejercicio = () => {
     }
 
     // funcion para obtener el factorial del numero indicado
+    //Correccion for Anidado
     const factorial = (a) => {
-        var res = 1;
         for (let i = 1; i <= a; i++) {
-            res *= i;
+            let res = 1;
+            for (let j = 1; i >= j ; j++) {
+                res *= j;
+            }
             console.log(`factorial de ${i} es : ${res}`);
         }
     }
